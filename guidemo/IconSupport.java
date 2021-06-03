@@ -50,8 +50,8 @@ public class IconSupport {
 		tbar.add(actions.get(actions.size() - 1));
 		return tbar;
 	}
-
-	public JMenu createMenu() {
+	
+	public JMenu createStamperMenu() {
 		JMenu stamper = new JMenu("Stamper");
 		for (int i = 0; i < actions.size() - 1; i++)
 			stamper.add(actions.get(i));

@@ -77,6 +77,16 @@ public class TextMenu extends JMenu {
 				panel.repaint();
 			}
 		});
+
+		JMenuItem radio = new JMenu("justify text ..");
+
+		JRadioButtonMenuItem left = new JRadioButtonMenuItem("Left");
+		JRadioButtonMenuItem right = new JRadioButtonMenuItem("Right");
+		JRadioButtonMenuItem center = new JRadioButtonMenuItem("Center");
+		radio.add(left);
+		radio.add(right);
+		radio.add(center);
+
 		add(change);
 		addSeparator();
 		add(size);
@@ -85,6 +95,7 @@ public class TextMenu extends JMenu {
 		add(bold);
 		addSeparator();
 		add(makeFontNameSubmenu());
+		// add(radio);
 	}
 	
 	/**
